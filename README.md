@@ -11,7 +11,7 @@ is a good place to start.
 ## Requirements
 
 - Chef 12.7+
-- AlgoSec 1
+- AlgoSec 1.0
 
 ## Usage
 
@@ -24,6 +24,8 @@ Use it by specifying a dependency on this cookbook in your own cookbook.
 depends 'algosec'
 ```
 
+TODO: Document the usage of the custom resources
+
 ## Testing
 
 For more details look at the [TESTING.md](./TESTING.md).
@@ -32,16 +34,16 @@ TODO: Enter any specific instructions for Testing this cookbook.
 
 ## Resources
 
-TODO: Document any [Custom Resources](https://docs.chef.io/custom_resources.html) that this cookbook may provide.
+TODO: Document the ApplicationsFlow resource and it's define action
 
 ## License & Authors
 
 If you would like to see the detailed LICENCE click [here](./LICENCE).
 
-- Author:: The Authors <you@example.com>
+- Author:: AlgoSec <dev@algosec.com>
 
 ```text
-Copyright:: AlgoSec Systems
+Copyright:: 2018 AlgoSec Systems
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
