@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'algosec-sdk', github: 'algosec/algosec-ruby-sdk', branch: 'master'
+gem 'algosec-sdk', github: 'algosec/algosec-ruby', branch: 'master'
 gem 'berkshelf'
 gem 'chef-sugar'
 gem 'kitchen-vagrant'
