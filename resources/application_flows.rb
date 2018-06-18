@@ -44,9 +44,9 @@ action :define do
   change_needed = [flows_to_delete.any?, flows_to_create.any?, flows_to_modify.any?].any?
   if change_needed
     converge_by "Re-defining application flows."\
-                "Creating #{flows_to_create.length},"\
-                "modifying #{flows_to_modify.length}"\
-                "and deleting #{flows_to_delete.length}" do
+                " Creating #{flows_to_create.length},"\
+                " modifying #{flows_to_modify.length}"\
+                " and deleting #{flows_to_delete.length}" do
       client.implement_app_flows_plan(
         new_resource.application_name,
         new_resource.application_flows,
