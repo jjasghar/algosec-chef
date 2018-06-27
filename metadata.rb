@@ -3,7 +3,7 @@
 name 'algosec'
 maintainer 'AlgoSec Systems'
 maintainer_email 'support@algosec.com'
-license 'Apache-2.0'
+license 'MIT'
 description 'Installs/Configures algosec'
 long_description 'Installs/Configures algosec'
 version '0.1.0'
