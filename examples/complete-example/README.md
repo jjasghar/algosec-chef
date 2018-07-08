@@ -28,3 +28,7 @@ To quickly modify and run this example cookbook:
     ```bash
     $ chef-client -z -o my_algosec::default
     ```
+
+6. As the cookbook is being run the first time, you can see how it automatically download AlgoSec's ruby SDK gem.
+
+7. Done! Easy enough? :)
