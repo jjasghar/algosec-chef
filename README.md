@@ -2,6 +2,9 @@
 
 Chef Cookbook to DevOps-ify network security management, leveraging AlgoSec's business-driven security policy management solution.
 
+Maintaining compatibility between applications and their network permission requirements can be a challenging task for many organizations. This Cookbook together with AlgoSec's solution and Chef automation infrastructure will make it as easy as committing a simple `json` file for each application. DevOps made simple...Engineers love it!
+
+
 ## SCOPE
 
 This cookbook is concerned with all [AlgoSec](https://www.algosec.com) services:
@@ -13,7 +16,7 @@ This cookbook is concerned with all [AlgoSec](https://www.algosec.com) services:
 ## Requirements
 
 - Chef 12.7+
-- AlgoSec Ruby SDK >= 0.1.0
+- AlgoSec Ruby SDK >= 0.1.0 (automatically installed upon first execution)
 
 ## Usage
 
@@ -67,9 +70,22 @@ bundle exec rake
 To actually test the code, please refer to the `examples/README.md` file and apply against a
  TEST app in your AlgoSec Demo VM machine. 
 
-## Resources
+## Custom Resources
+Currently, the AlgoSec Chef Cookbook include only one custom resource which is highly useful: The `algosec_application_flows`.
 
-TODO: Document the ApplicationsFlow resource and it's define action
+### algosec_application_flows
+
+This custom resource is used to define a set of application flows for a given application on AlgoSec BusinessFlow. 
+The resource will delete/modify/create flows as needed to make the list of application flows on the server match the exact request made by the Chef cookbook (defined by you).
+
+#### Common Use Cases
+
+* A team of engineers in your company are developing an application that is frequently deployed within the network. With some of the changes, new requirements for network permissions are presented. 
+ Leveraging AlgoSec BusinessFlow and Chef using the `algosec_application_flows`, all they need to do is ship a `flows.json` file along with their code. This file will be loaded onto AlgoSec BusinessFlow by Chef and AlgoSec solution would deploy it to the network.
+
+To see an example of how to use this custom resource you can choose from a few options based on your level of familiarity with AlgoSec Chef Cookbook and Chef in general:
+* See the [Usage](#Usage) section in this README file for a short example.
+* See the [Examples README.md](examples/README.md) for a full step-by-step guide that will show you how to use this resource.
 
 ## License & Authors
 
