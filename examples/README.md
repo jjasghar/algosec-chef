@@ -4,13 +4,14 @@ The main README shows a few details about the resources in this cookbook, but ma
 As such, many of those code "examples" are incomplete or contain much more than you'd want to use.
 This directory contains example recipes to show real, working code and detailed comments about how the resources work, why you'd want to use certain properties, and how to tie some of the resources together.
 
+
+## TL;DR
+
+To just get an example cookbook up and running without diving into all the details and explanations, just check the fully prepared example folder [README.md](complete-example/README.md)
+
 ## Getting started
 
 This section will help you get started using the AlgoSec cookbook, and in doing so, explain some key concepts pertaining to Chef.
-
-### TL;DR
-
-To just get an example cookbook up and running without diving into all the details and explanations, just check the fully prepared example folder [README.md](complete-example/README.md)
 
 
 ### A quick intro of Chef
