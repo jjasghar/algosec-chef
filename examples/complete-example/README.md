@@ -31,4 +31,4 @@ To quickly modify and run this example cookbook:
 
 6. As the cookbook is being run the first time, you can see how it automatically download AlgoSec's ruby SDK gem.
 
-7. Done! Easy enough? :)
+That's it! You can re-run the recipe as many times as you'd like, adding or changing properties, and it will ensure what you set in the recipe is reflected on the AlgoSec. You can update the password, add permissions, or create additional resources.

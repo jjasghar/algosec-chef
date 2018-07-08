@@ -52,18 +52,15 @@ About the only thing you'll need to get started developing is some basic termina
   $ chef generate cookbook my_algosec
   $ cd my_algosec
   ```
-  
-  a. If you examine what was created (`$ ls -lah`), you'll notice a few files, notably `metadata.rb` and `recipes/default.rb`
+  * If you examine what was created (`$ ls -lah`), you'll notice a few files, notably `metadata.rb` and `recipes/default.rb`
 
 4. At this point, read the main README of this repo. Much of what comes next is already described there, and we will not repeat everything here.
 
 5. The first thing we need to do is specify a dependency on the algosec cookbook. Add the following to the end of your `metadata.rb` file:
-
   ```ruby
   depends 'algosec'
   ```
-
-  a. :pushpin: **Tip:** Check out the [Chef docs](https://docs.chef.io/config_rb_metadata.html) to see what all else you can put in this `metadata.rb` file.
+  * :pushpin: **Tip:** Check out the [Chef docs](https://docs.chef.io/config_rb_metadata.html) to see what all else you can put in this `metadata.rb` file.
 
 6. Now we can edit our first recipe and add some configuration. Open up `recipes/default.rb` and add:
 
@@ -145,4 +142,4 @@ About the only thing you'll need to get started developing is some basic termina
 That's it! You can re-run the recipe as many times as you'd like, adding or changing properties, and it will ensure what you set in the recipe is reflected on the AlgoSec.
 You can update the password, add permissions, or create additional resources.
 
-Now that you've gotten your feet wet, please take another look at the main README to see the complete list of resources available to you, as well as the recipes in this directory for examples of how to use them.
+Now that you've gotten your feet wet, please take another look at the main [README](../README.md) to see the complete list of resources available to you, as well as the recipes in this directory for examples of how to use them.
