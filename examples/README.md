@@ -53,7 +53,7 @@ About the only thing you'll need to get started developing is some basic termina
   $ cd my_algosec
   ```
   
-  1. If you examine what was created (`$ ls -lah`), you'll notice a few files, notably `metadata.rb` and `recipes/default.rb`
+  a. If you examine what was created (`$ ls -lah`), you'll notice a few files, notably `metadata.rb` and `recipes/default.rb`
 
 4. At this point, read the main README of this repo. Much of what comes next is already described there, and we will not repeat everything here.
 
@@ -63,7 +63,7 @@ About the only thing you'll need to get started developing is some basic termina
   depends 'algosec'
   ```
 
-  1. :pushpin: **Tip:** Check out the [Chef docs](https://docs.chef.io/config_rb_metadata.html) to see what all else you can put in this `metadata.rb` file.
+  a. :pushpin: **Tip:** Check out the [Chef docs](https://docs.chef.io/config_rb_metadata.html) to see what all else you can put in this `metadata.rb` file.
 
 6. Now we can edit our first recipe and add some configuration. Open up `recipes/default.rb` and add:
 
