@@ -7,7 +7,7 @@ This directory contains example recipes to show real, working code and detailed 
 
 ## TL;DR
 
-To just get an example cookbook up and running without diving into all the details and explanations, just check the fully prepared example folder [README.md](complete-example/README.md)
+To just get an example cookbook up and running without diving into all the details and explanations, just check the fully prepared example folder [README.md](algosec-chef-example/README.md)
 
 ## Getting started
 
@@ -33,13 +33,13 @@ If you're new to Chef, I'd encourage you to go through some of the tutorials and
 
 About the only thing you'll need to get started developing is some basic terminal knowledge and the [ChefDK](https://downloads.chef.io/chef-dk/) installed. This will give you Ruby, as well as tools such as Berkshelf, Test Kitchen, ChefSpec, Foodcritic, and Rubocop. For this guide, we'll use a Bash terminal; if you're on Windows, you may have to modify some of the system commands accordingly.
 
-1. To get started, we'll create a new directory named `complete-example`; this is where we'll put our new cookbooks. Also in this directory, lives the `.chef/knife.rb` configuration file used to connect to a Chef server.
+1. To get started, we'll create a new directory named `algosec-chef-example`; this is where we'll put our new cookbooks. Also in this directory, lives the `.chef/knife.rb` configuration file used to connect to a Chef server.
 
   ```bash
-  $ mkdir complete-example
-  $ cd complete-example
+  $ mkdir algosec-chef-example
+  $ cd algosec-chef-example
   ```
-2. We'll create a directory within our complete-example named cookbooks, where our cookbooks will live:
+2. We'll create a directory within our algosec-chef-example named cookbooks, where our cookbooks will live:
 
   ```bash
   $ mkdir cookbooks
@@ -99,12 +99,12 @@ About the only thing you'll need to get started developing is some basic termina
   $ chef-client -z -o my_algosec::default
   ```
 
-  * You'll see an error saying it can't find the correct cookbook. This is because we haven't told Chef where to find our cookbooks, and we haven't downloaded our cookbook dependencies (algosec). Fix this by creating a `knife.rb` file at `complete-example/.chef/knife.rb` and adding the needed configuration:
+  * You'll see an error saying it can't find the correct cookbook. This is because we haven't told Chef where to find our cookbooks, and we haven't downloaded our cookbook dependencies (algosec). Fix this by creating a `knife.rb` file at `algosec-chef-example/.chef/knife.rb` and adding the needed configuration:
         
   * Create the `.chef` folder:
     ```bash
     $ cd ../../
-    # (Now we're in complete-example)
+    # (Now we're in algosec-chef-example)
     $ mkdir .chef
     ```
     
@@ -123,13 +123,13 @@ About the only thing you'll need to get started developing is some basic termina
   
     ```bash
     $ cd cookbooks
-    # (Now we're in complete-example/cookbooks)
+    # (Now we're in algosec-chef-example/cookbooks)
     
     $ knife cookbook site download algosec
     
     # Now we need to untar the download:
     $ tar -xvf algosec-*.tar.gz
-    # Now the algosec cookbook lives at complete-example/cookbooks/algosec
+    # Now the algosec cookbook lives at algosec-chef-example/cookbooks/algosec
     
     # You can remove the tar file if you'd like; we no longer need it
     $ rm algosec-*.tar.gz
