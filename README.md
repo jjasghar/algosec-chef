@@ -83,6 +83,7 @@ The resource will delete/modify/create flows as needed to make the list of appli
 * A team of engineers in your company are developing an application that is frequently deployed within the network. With some of the changes, new requirements for network permissions are presented. 
  Leveraging AlgoSec BusinessFlow and Chef using the `algosec_application_flows`, all they need to do is ship a `flows.json` file along with their code. This file will be loaded onto AlgoSec BusinessFlow by Chef and AlgoSec solution would deploy it to the network.
 
+#### Examples
 To see an example of how to use this custom resource you can choose from a few options based on your level of familiarity with AlgoSec Chef Cookbook and Chef in general:
 * See the [Usage](#Usage) section in this README file for a short example.
 * See the [Examples README.md](examples/README.md) for a full step-by-step guide that will show you how to use this resource.
