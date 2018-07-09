@@ -1,4 +1,4 @@
-# algosec
+# AlgoSec Chef Cookbook
 
 Chef Cookbook to DevOps-ify network security management, leveraging AlgoSec's business-driven security policy management solution.
 
