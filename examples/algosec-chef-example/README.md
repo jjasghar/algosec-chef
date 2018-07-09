@@ -17,17 +17,19 @@ To quickly modify and run this example cookbook:
     # Now download the cookbook tar, untar to a folder, and delete the tar file
     $ knife cookbook site download algosec; tar -xvf algosec-*.tar.gz; rm algosec-*.tar.gz
     
-    # Now the algosec cookbook lives at chef-example/cookbooks/algosec
     ```
+    **Notice:** Now the algosec cookbook lives at algosec-chef-example/cookbooks/algosec
+
  
-4. Edit the content of [cookbooks/my_algosec/recipes/default.rb](cookbooks/my_algosec/recipes/default.rb):
-    1. Edit the `algosec` credentials hash.
-    2. Edit the `application_flows` definition as you wish.
+4. To modify the connection details, credentials and flows to be defined:
+    1. To edit credentials and connection details, edit the `algosec` ruby hash in [cookbooks/my_algosec/recipes/default.rb](cookbooks/my_algosec/recipes/default.rb)
+    2. To edit the flows definition and application name, edit the content of [cookbooks/my_algosec/flows.json](cookbooks/my_algosec/flows.json).
 5. Run the cookbook default recipe using Chef Zero:
     
     ```bash
-    $ chef-client -z -o my_algosec::default
+    $ chef-client -z -o my_algosec::default -j `pwd`/my_algosec/flows.json
     ```
+    **Notice:** Make sure that the `-j` option point `flows.json` file with its **full path**.
 
 6. As the cookbook is being run the first time, you can see how it automatically download AlgoSec's ruby SDK gem.
 
