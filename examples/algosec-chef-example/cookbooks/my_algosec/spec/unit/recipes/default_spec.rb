@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #
 # Cookbook:: my_algosec
 # Spec:: default

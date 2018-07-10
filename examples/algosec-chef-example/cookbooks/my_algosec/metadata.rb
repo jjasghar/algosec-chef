@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 name 'my_algosec'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
